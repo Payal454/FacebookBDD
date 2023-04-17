@@ -31,18 +31,18 @@ public class LoginStepDefinition {
 		Assert.assertEquals("Facebook - log in or sign up",title);
 	}
 
-//	@Then("^user enters \"(.*)\" and \"(.*)\"$")
-//	public void user_enters_username_and_password(String username,String password) {
-//		driver.findElement(By.name("email")).sendKeys(username);
-//		driver.findElement(By.name("pass")).sendKeys(password);
-//	}
-	
-	@Then("^user enters username and password$")
-	public void user_enters_username_and_password(DataTable credentials) {// credentials is an object veriable
-		List<List<String>> data = credentials.cells();
-		driver.findElement(By.name("email")).sendKeys(data.get(0).get(0));
-		driver.findElement(By.name("pass")).sendKeys(data.get(0).get(1));
+	@Then("^user enters \"(.*)\" and \"(.*)\"$")
+	public void user_enters_username_and_password(String username,String password) {
+		driver.findElement(By.name("email")).sendKeys(username);
+		driver.findElement(By.name("pass")).sendKeys(password);
 	}
+	
+//	@Then("^user enters username and password$")
+//	public void user_enters_username_and_password(DataTable credentials) {// credentials is an object veriable
+//		List<List<String>> data = credentials.cells();
+//		driver.findElement(By.name("email")).sendKeys(data.get(0).get(0));
+//		driver.findElement(By.name("pass")).sendKeys(data.get(0).get(1));
+//	}
 
 	@Then("^user clicks on login button$")
 	public void user_clicks_on_login_button() {
@@ -51,7 +51,8 @@ public class LoginStepDefinition {
 	
 	  @Then("^user quit$") 
 	   public void user_quit() { 
-		   driver.quit();  }
+		   driver.quit(); 
+		   }
 
 	 
 	 
