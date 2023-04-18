@@ -1,0 +1,175 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-04-17T23:04:43.864Z",
+        "line": 23,
+        "name": "Facebook login test scenario",
+        "description": "",
+        "id": "facebook-login-feature;facebook-login-test-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2658517300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinition.user_is_already_on_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5981300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "title of login page is Facebook - log in or sign up",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinition.title_of_login_page_is_Facebook_log_in_or_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108728100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters \"payal123\" and \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "payal123",
+                  "offset": 13
+                },
+                {
+                  "val": "test@123",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.LoginStepDefinition.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59448500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 138227100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user quit",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinition.user_quit()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-17T23:04:46.908Z",
+        "line": 24,
+        "name": "Facebook login test scenario",
+        "description": "",
+        "id": "facebook-login-feature;facebook-login-test-scenario;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1313591700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinition.user_is_already_on_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4982000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "title of login page is Facebook - log in or sign up",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinition.title_of_login_page_is_Facebook_log_in_or_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103254100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters \"automation\" and \"testtest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "automation",
+                  "offset": 13
+                },
+                {
+                  "val": "testtest",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.LoginStepDefinition.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59410000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 124202900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user quit",
+            "match": {
+              "location": "stepDefinitions.LoginStepDefinition.user_quit()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Facebook Login Feature",
+    "description": "",
+    "id": "facebook-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/login.feature",
+    "tags": []
+  }
+]
