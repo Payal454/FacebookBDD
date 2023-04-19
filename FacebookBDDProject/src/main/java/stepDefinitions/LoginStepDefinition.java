@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import java.util.List;
+import java.util.Map;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -31,11 +32,11 @@ public class LoginStepDefinition {
 		Assert.assertEquals("Facebook - log in or sign up",title);
 	}
 
-	@Then("^user enters \"(.*)\" and \"(.*)\"$")
-	public void user_enters_username_and_password(String username,String password) {
-		driver.findElement(By.name("email")).sendKeys(username);
-		driver.findElement(By.name("pass")).sendKeys(password);
-	}
+//	@Then("^user enters \"(.*)\" and \"(.*)\"$")
+//	public void user_enters_username_and_password(String username,String password) {
+//		driver.findElement(By.name("email")).sendKeys(username);
+//		driver.findElement(By.name("pass")).sendKeys(password);
+//	}
 	
 //	@Then("^user enters username and password$")
 //	public void user_enters_username_and_password(DataTable credentials) {// credentials is an object veriable
@@ -43,16 +44,29 @@ public class LoginStepDefinition {
 //		driver.findElement(By.name("email")).sendKeys(data.get(0).get(0));
 //		driver.findElement(By.name("pass")).sendKeys(data.get(0).get(1));
 //	}
-
-	@Then("^user clicks on login button$")
-	public void user_clicks_on_login_button() {
-		driver.findElement(By.name("login")).click();
-	}
 	
-	  @Then("^user quit$") 
-	   public void user_quit() { 
-		   driver.quit(); 
-		   }
+	
+	
+	@Then("^user enters username and password$")
+	public void user_enters_username_and_password(DataTable datatable) {// credentials is an object veriable
+		List<Map<String,String>> listdata= datatable.asMaps(String.class, String.class);
+		for(Map<String,String> mapdata :listdata ) {
+		driver.findElement(By.name("email")).sendKeys(mapdata.get("username"));
+		driver.findElement(By.name("pass")).sendKeys(mapdata.get("password"));
+		driver.findElement(By.name("login")).click();
+		driver.navigate().refresh();
+	}
+	}
+
+//	@Then("^user clicks on login button$")
+//	public void user_clicks_on_login_button() {
+//		driver.findElement(By.name("login")).click();
+//	}
+	
+//	  @Then("^user quit$") 
+//	   public void user_quit() { 
+//		   driver.quit(); 
+//		   }
 
 	 
 	 

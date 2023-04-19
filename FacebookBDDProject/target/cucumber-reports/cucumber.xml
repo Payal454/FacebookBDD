@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="4.776">
-    <testcase classname="Facebook Login Feature" name="Facebook login test scenario" time="3.033">
-        <system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Facebook - log in or sign up....................passed
-Then user enters "payal123" and "test@123"..................................passed
-Then user clicks on login button............................................passed
-Then user quit..............................................................passed
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="0.193">
+    <testcase classname="Fcaebook_login" name="Login with correct username ans password" time="0.049">
+        <failure message="The scenario has no steps" type="java.lang.Exception"/>
+    </testcase>
+    <testcase classname="Fcaebook_login" name="Login with incorrect username ans password" time="0">
+        <failure message="The scenario has no steps" type="java.lang.Exception"/>
+    </testcase>
+    <testcase classname="Fcaebook_login" name="Test Title of login page" time="0">
+        <failure message="The scenario has no steps" type="java.lang.Exception"/>
+    </testcase>
+    <testcase classname="Fcaebook_login" name="Verify right panel link" time="0.001">
+        <failure message="The scenario has no steps" type="java.lang.Exception"/>
+    </testcase>
+    <testcase classname="Fcaebook_login" name="create forgot password" time="0.004">
+        <system-out><![CDATA[Given This is forgot password test case.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Facebook Login Feature" name="Facebook login test scenario 2" time="1.608">
-        <system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Facebook - log in or sign up....................passed
-Then user enters "automation" and "testtest"................................passed
-Then user clicks on login button............................................passed
-Then user quit..............................................................passed
-]]></system-out>
+    <testcase classname="Fcaebook_login" name="Create new account" time="0.001">
+        <failure message="The scenario has no steps" type="java.lang.Exception"/>
     </testcase>
 </testsuite>
